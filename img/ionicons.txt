@@ -1,0 +1,12 @@
+font-family: sohne
+bg-color: white
+bg-color hover: F2F2F2
+
+SEARCH
+<ion-icon name="search-outline"></ion-icon>
+SAVE
+<ion-icon name="bookmark-outline"></ion-icon>
+NOTIFICATION
+<ion-icon name="notifications-outline"></ion-icon>
+TWITTER
+<ion-icon name="logo-twitter"></ion-icon>
