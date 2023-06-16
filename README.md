@@ -1,2 +1,2 @@
 # Sito_Medium
-Copia sito Medium (flexbox e il resto)
+Medium website copy (flexbox and other stuff)
