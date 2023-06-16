@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 body{
     background-color: white;
     margin:0;
@@ -12,7 +12,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 26rem;
+    gap: 31rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px -1px 14px 4px rgba(0,0,0,0.65);
     padding: 1rem 0;
@@ -34,17 +34,20 @@ body{
     align-items: center;
     justify-content: center;
     background-color: white;
+    color: rgb(133, 133, 133);
     padding: 0.5rem 0.5rem;
     border-radius: 50px;
+    margin-right: -0.8rem;
 }
 
 .membership{
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid rgb(133, 133, 133);
     border-radius: 50px;
     line-height: 25px;
     padding: 0.3rem 0.6rem;
     font-size: 0.8rem;
+    margin-left: 0.4rem;
 }
 
 .login{
@@ -54,8 +57,23 @@ body{
     padding: 0.3rem 0.8rem;
 }
 
+.bg-color-white{
+    background-color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 50px;
+}
+
+.bg-color-white-small{
+    background-color: white;
+    padding: 0.2rem 0.3rem;
+    border-radius: 50px;
+}
 .white{
     color: white;
+}
+
+.grey{
+    color: rgb(133, 133, 133);
 }
 
 .bg-grey:hover{
@@ -91,7 +109,7 @@ ion-icon{
     display: flex;
     flex-direction: column;
     margin: 4rem 5rem;
-    border-right:2px solid grey;
+    border-right:1px solid rgb(133, 133, 133);
     padding-right: 2rem;
 }
 .foll-rec{
@@ -107,9 +125,12 @@ ion-icon{
     border-bottom: 3px solid rgb(133, 133, 133);
 } FARE ANIMAZIONE SOTTOLINEATURA*/
 
-.foll-rec span{
-    font-size: 0.75rem;
-    font-weight: bold;
+.piccolo{
+    font-size: 0.7rem;
+}
+
+.bold{
+    font-weight: bold;;
 }
 
 .linea-separa{
@@ -118,10 +139,10 @@ ion-icon{
     margin-top: 0.5rem;
     margin-bottom: 2rem;
 }
-/*blocco ripetuto*/
+/*BLOCCO RIPETUTO*/
 .notizie-immagine{
     display: flex;
-    gap:1rem;
+    gap:1.5rem;
     
 }
 .notizie{
@@ -135,14 +156,12 @@ ion-icon{
     object-fit: cover;
 }
 
-.notizie span{
-    font-size: 0.7rem;
-}
-
 .titolo-notizia{
-    font-size: 1.1rem;
-    font-weight:1000;
+    font-size: 1.3rem;
     margin-top:0rem;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -0.5px;
+    margin-top: 0.3rem;
 }
 
 .descrizione-notizia{
@@ -151,12 +170,49 @@ ion-icon{
 }
 
 .img-lat{
-    width:13rem;
+    width:11rem;
     object-fit: contain;
+    margin-top: 1rem;
+    
 }
 
+.bottom-notizia{
+    display: flex;
+    align-items: center;
+    gap:0.1rem;
+    margin-left: -0.3rem;
+    margin-top: -0.8rem;
+}
 
+.scritta-piccola{
+    font-size: 0.2  ;
+}
 
+.punto{
+    margin-top: 4px;
+}
+
+.separa-blocco{
+    margin-bottom: 2.5REM;
+}
+
+.separa-save{
+    margin-left: 9rem;
+    margin-right: 0.8rem;
+}
+
+.adjust-save{
+    line-height: 10px;
+    margin-top: 0.5rem;
+}
+
+/*.punto::after{
+    content: "";
+    background-color: black ;
+    border-radius: 50px;
+    padding: 3px 3px;
+    margin-left: 10px;
+} da problemi con il bg-grey*/ 
 
 /*________BLOCCO DESTRA_______*/
 
