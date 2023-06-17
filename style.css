@@ -110,7 +110,7 @@ ion-icon{
     flex-direction: column;
     margin: 4rem 5rem;
     border-right:1px solid rgb(133, 133, 133);
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 .foll-rec{
     display: flex;
@@ -138,6 +138,7 @@ ion-icon{
     border: 1px solid rgb(133, 133, 133);
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+    opacity: 0.3;
 }
 /*BLOCCO RIPETUTO*/
 .notizie-immagine{
@@ -218,4 +219,51 @@ ion-icon{
 
 .blocco-dx{
     display: flex;
+    flex-direction: column;
+    margin-top:4rem ;
+    margin-left: 3rem;
 }
+.twitter-box{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+}
+.logo-medium{
+    width: 5rem;
+}
+
+.tx-center{
+    text-align: center;
+}
+
+.twitter-words{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.twitter-words img{
+    width: 1.3rem;
+}
+
+.adjust-twitter{
+    margin-top: 0.2rem;
+}
+
+.linea-separa-dx{
+    width: 150%;
+    border: 0.5px solid rgb(133, 133, 133);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.3;
+}
+
+.reccomended{
+    margin-left: -4rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
