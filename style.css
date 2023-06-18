@@ -15,7 +15,7 @@ body{
     gap: 31rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px -1px 14px 4px rgba(0,0,0,0.65);
-    padding: 1rem 0;
+    padding: 0.8rem 0;
     width: 100%;
 }
 
@@ -27,7 +27,7 @@ body{
 }
 
 .nav-flex-big img{
-    width:10rem;
+    width:9rem;
 }
 
 .icone-nav{
@@ -114,6 +114,7 @@ ion-icon{
 /*________BLOCCO TOTALE________*/
 .main-blocco{
     display: flex;
+    margin-top:2.5rem;
 }
 /*________BLOCCO SINISTRA_______*/
 .blocco-sx{
@@ -242,6 +243,7 @@ ion-icon{
     flex-direction: column;
     margin-top:4rem ;
     margin-left: -4rem;
+    z-index: 0;
 }
 .twitter-box{
     display: flex;
@@ -334,7 +336,7 @@ ion-icon{
     margin-left: 3rem;
 }
 
-/*CONVENIVA AVERE UN'ALTRA FLEXBOX VERTICALE CON I FOLLOW?*/
+/*conveniva un'altra flexbox verticale per i follow?*/
 .adjust-utente-1{
     margin-left: 3.5rem;
 }
@@ -374,8 +376,24 @@ ion-icon{
     margin-bottom: 3rem;
 }
 
+/*SCROLL COPIATISSIMO DA YOUTUBE*/
 .sticky{
     position: sticky;
-    top:-31.5rem;
-    height: 150vh;
+    top:-28rem;
+    height: 100vh;
 }
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 999;
+    transition: all 300ms ease-in-out;
+}
+
+.scroll-down header{
+    transform: translate3d(0, -100%, 0);
+}
+
+/*ALTRO*/

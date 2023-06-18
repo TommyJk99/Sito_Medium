@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--BARRA_NAVIGAZIONE-->
-    <nav>
-        <div class="nav-flex-big">
-            <img class="cursor-pointer" src="/img/icona-medium.png" alt="icona-medium">
-            <div class="nav-flex-icons">
-                <div class="lente icone-nav bg-grey cursor-pointer">
-                    <ion-icon name="search-outline"></ion-icon>
-                </div>
-                <div class="icone-nav bg-grey cursor-pointer">
-                    <ion-icon name="bookmark-outline"></ion-icon>
-                </div>
-                <div class="icone-nav bg-grey cursor-pointer">
-                    <ion-icon name="notifications-outline"></ion-icon>
-                </div>
-                <div class="membership bg-invert no-touch cursor-pointer">
-                    <span>Resume membership</span>
-                </div>
-                <div class="login bg-scurisci no-touch cursor-pointer white">
-                    <span>T</span>
+    <header>
+        <!--BARRA_NAVIGAZIONE-->
+        <nav>
+            <div class="nav-flex-big">
+                <img class="cursor-pointer" src="/img/icona-medium.png" alt="icona-medium">
+                <div class="nav-flex-icons">
+                    <div class="lente icone-nav bg-grey cursor-pointer">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div>
+                    <div class="icone-nav bg-grey cursor-pointer">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </div>
+                    <div class="icone-nav bg-grey cursor-pointer">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </div>
+                    <div class="membership bg-invert no-touch cursor-pointer">
+                        <span>Resume membership</span>
+                    </div>
+                    <div class="login bg-scurisci no-touch cursor-pointer white">
+                        <span>T</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!--CORPO PRINCIPALE-->
     <div class="main-blocco">
 
@@ -375,5 +377,31 @@
     <!--SCRIPT ICONE-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--SCRIPT JAVA COPIATO SPUDORATAMENTE-->
+    <script>
+        const body = document.body;
+        let lastScroll = 0;
+
+        window.addEventListener('scroll',() =>{
+            const currentScroll=window.pageYOffset
+
+            if(currentScroll<=0){
+                body.classList.remove("scroll-up")
+            }
+
+            if(currentScroll > lastScroll && !body.classList.contains("scroll-down")){
+                body.classList.remove("scroll-up")
+                body.classList.add("scroll-down")
+            }
+
+            if(currentScroll < lastScroll && body.classList.contains("scroll-down")){
+                body.classList.remove("scroll-down")
+                body.classList.add("scroll-app")
+            }
+
+            lastScroll=currentScroll;          
+        })
+
+    </script>
 </body>
 </html>
