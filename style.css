@@ -242,7 +242,6 @@ ion-icon{
     flex-direction: column;
     margin-top:4rem ;
     margin-left: -4rem;
-    
 }
 .twitter-box{
     display: flex;
@@ -373,4 +372,10 @@ ion-icon{
     margin-right: 2rem;
     margin-left: 3rem;
     margin-bottom: 3rem;
+}
+
+.sticky{
+    position: sticky;
+    top:-31.5rem;
+    height: 150vh;
 }
