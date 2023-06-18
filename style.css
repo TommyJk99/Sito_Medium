@@ -397,3 +397,27 @@ header{
 }
 
 /*ALTRO*/
+
+/*animazione icona salva notizia*/
+.black-save{
+    display: none;
+}
+
+.seleziona-save:hover .white-save{
+    display:none;
+}
+
+.seleziona-save:hover .black-save{
+    display: block;
+}
+
+/*animazione following e recommended for you*/
+/*ADATTA SCHERMO*/
+
+/*.adatta-schermo{
+    max-width: 1200px;
+    margin: auto;
+}*/
+
+
+
